@@ -1,6 +1,6 @@
 # WEB404 — Secure File Upload: Build, Attack, Secure
 
-**Student:** Pema Tshering Yangchen (2230295) — "Pom"
+**Student:** Pema Tshering Yangchen (2230295)
 **Module:** WEB404 (Web Security)
 **Assignment:** 3 — *Develop a file upload feature and implement security measures to prevent malicious file uploads.*
 **Folder:** `Assignment3/`
