@@ -116,8 +116,6 @@ SVG is an XML image format that can contain `<script>`. Served inline as `image/
 
 The payload was uploaded with the filename `../../pwned.txt`, attempting to escape the upload directory and write elsewhere on disk. **It did not escape** — `multer` 2.x reduces `originalname` to its base name, so the file landed inside the upload directory as `pwned.txt`.
 
-> **Viva note (library maturity is a control):** this mirrors the Assignment 1 finding on `jsonwebtoken`. The *application code* here is unsafe — it passes the client filename straight through — but the current library version blocks the traversal by default. The correct conclusion is not "multer makes it safe" but "never rely on that": the secure version below generates its own filename and additionally verifies the resolved path stays inside the target directory, so the defence does not depend on library behaviour that could change.
-
 ---
 
 ## 6. Fix / Secure Phase
