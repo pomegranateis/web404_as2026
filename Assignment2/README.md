@@ -1,6 +1,6 @@
 # WEB404 — SQL Injection: Build, Attack, Secure
 
-**Student:** Pema Tshering Yangchen (2230295) — "Pom"
+**Student:** Pema Tshering Yangchen (2230295)
 **Module:** WEB404 (Web Security)
 **Assignment:** 2 — *Set up a vulnerable web application and perform various types of SQL injection attacks.*
 **Folder:** `Assignment2/`

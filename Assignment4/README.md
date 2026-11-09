@@ -1,6 +1,6 @@
 # WEB404 — Command Injection: Build, Attack, Secure
 
-**Student:** Pema Tshering Yangchen (2230295) — "Pom"
+**Student:** Pema Tshering Yangchen (2230295)
 **Module:** WEB404 (Web Security)
 **Assignment:** 4 — *Create a command-line interface in a web application and implement safeguards against command injection.*
 **Folder:** `Assignment4/`

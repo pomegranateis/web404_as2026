@@ -1,6 +1,6 @@
 # WEB404 — JWT-Based Authentication: Build, Attack, Secure
 
-**Student:** Pema Tshering Yangchen (2230295) — "Pom"
+**Student:** Pema Tshering Yangchen (2230295)
 **Module:** WEB404 (Web Security)
 **Repository root:** `web404_as2026/`
 

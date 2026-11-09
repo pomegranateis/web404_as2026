@@ -1,6 +1,6 @@
 # WEB404 — CSRF: Build, Attack, Secure
 
-**Student:** Pema Tshering Yangchen (2230295) — "Pom"
+**Student:** Pema Tshering Yangchen (2230295)
 **Module:** WEB404 (Web Security)
 **Assignment:** 5 — *Create a CSRF vulnerable form and then implement CSRF tokens to prevent attacks.*
 **Folder:** `Assignment5/`
