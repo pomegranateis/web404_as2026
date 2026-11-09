@@ -81,7 +81,7 @@ There is no secret in the request that an attacker couldn't also send — so a c
 <script>document.getElementById('csrf').submit();</script>
 ```
 
-> **Note on the session cookie / SameSite (viva depth):** this lab sets the cookie `SameSite=Lax`, not `Strict`, so the vulnerability is kept at the **application layer** — a missing CSRF token — which is what the assignment is about. Modern browsers' `SameSite=Lax` default is itself a partial mitigation (it blocks the cookie on many cross-site POSTs), much like the library-level defaults seen in Assignments 1 and 3. But it is **not** a complete fix: it does not cover every method/navigation, policies vary by browser, and APIs that must allow cross-site use can't rely on it. The CSRF token is the real, server-controlled defence; `SameSite` and the Origin check are additional layers.
+> **Note on the session cookie / SameSite:** this lab sets the cookie `SameSite=Lax`, not `Strict`, so the vulnerability is kept at the **application layer** — a missing CSRF token — which is what the assignment is about. Modern browsers' `SameSite=Lax` default is itself a partial mitigation (it blocks the cookie on many cross-site POSTs), much like the library-level defaults seen in Assignments 1 and 3. But it is **not** a complete fix: it does not cover every method/navigation, policies vary by browser, and APIs that must allow cross-site use can't rely on it. The CSRF token is the real, server-controlled defence; `SameSite` and the Origin check are additional layers.
 
 ---
 
